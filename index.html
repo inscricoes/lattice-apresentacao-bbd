@@ -11,9 +11,6 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="icon" href="https://joaogeneroso.com/assets/favicon.jpg">
-  <link rel="apple-touch-icon" href="https://joaogeneroso.com/assets/favicon.jpg">
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,700&display=swap"
@@ -21,7 +18,7 @@
 </head>
 
 <body>
-  <script>const pageLanguage = 'en';</script>
+  <script>const pageLanguage = 'pt-br';</script>
 
   <div class="content-container" id="dynamicContent">
 
@@ -43,15 +40,15 @@
       <div class="ui-item">
         <div class="ui-header-info">
           <div class="ui-section ui-header ui-header-info-inner">
-            <p>Text</p>
+            <p>Texto</p>
           </div>
           <p class="hover-info">!</p>
         </div>
         <textarea placeholder="." class="ui-input" id="input--top-left" autocomplete="off" spellcheck="false"
           rows="3"></textarea>
-        <button class="ui-button" id="text-update">update text</button>
+        <button class="ui-button" id="text-update">atualizar texto</button>
         <div>
-          <p class="ui-number-title">line height</p>
+          <p class="ui-number-title">altura de linha</p>
           <div class="ui-number-input">
             <div class="ui-button ui-value-button" id="line-height-subtract">-</div>
             <div class="ui-value-display" id="line-height-value">0.90</div>
@@ -68,7 +65,7 @@
           <p class="hover-info">!</p>
         </div>
         <div>
-          <p class="ui-number-title">columns</p>
+          <p class="ui-number-title">colunas</p>
           <div class="ui-number-input">
             <button class="ui-button ui-value-button" id="columns-subtract">-</button>
             <p class="ui-value-display" id="columns-value">6</p>
@@ -76,7 +73,7 @@
           </div>
         </div>
         <div>
-          <p class="ui-number-title">rows</p>
+          <p class="ui-number-title">linhas</p>
           <div class="ui-number-input">
             <button class="ui-button ui-value-button" id="rows-subtract">-</button>
             <p class="ui-value-display" id="rows-value">3</p>
@@ -93,7 +90,7 @@
           <p class="hover-info">?</p>
         </div>
         <div class="no-mobile">
-          <p class="ui-number-title">active keyframe</p>
+          <p class="ui-number-title">keyframe ativo</p>
           <div class="ui-number-input">
             <button class="ui-button ui-value-button" id="keyframe-subtract">-</button>
             <p class="ui-value-display" id="keyframe-value">1</p>
@@ -101,7 +98,7 @@
           </div>
         </div>
         <div class="no-mobile">
-          <p class="ui-number-title">total keyframes</p>
+          <p class="ui-number-title">total de keyframes</p>
           <div class="ui-number-input">
             <button class="ui-button ui-value-button" id="max-keyframe-subtract">-</button>
             <p class="ui-value-display" id="max-keyframe-value">4</p>
@@ -109,21 +106,21 @@
           </div>
         </div>
         <div class="no-mobile">
-          <p class="ui-number-title">transition duration</p>
+          <p class="ui-number-title">tempo de transição</p>
           <div class="ui-number-input">
             <input value="" type="text" placeholder="10" class="ui-input ui-input-number" id="animation-transition"
               autocomplete="off" maxlength="3" oninput="timeInput(this)">
           </div>
         </div>
         <div class="no-mobile">
-          <p class="ui-number-title">static duration</p>
+          <p class="ui-number-title">tempo de espera</p>
           <div class="ui-number-input">
             <input value="" type="text" placeholder="20" class="ui-input ui-input-number" id="animation-static"
               autocomplete="off" maxlength="3" oninput="timeInput(this)">
           </div>
         </div>
         <div class="no-mobile">
-          <p class="ui-number-title">interpolation type</p>
+          <p class="ui-number-title">interpolação</p>
           <select class="ui-dropdown" id="animation-interpolation" onchange="interpolationMenu()">
             <option value="interpolation-0">ease in out</option>
             <option value="interpolation-1">ease out</option>
@@ -132,7 +129,7 @@
           </select>
         </div>
         <div class="no-mobile">
-          <p class="ui-number-title">interpolation easing</p>
+          <p class="ui-number-title">suavização</p>
           <div class="ui-number-input">
             <button class="ui-button ui-value-button" id="exponent-subtract">-</button>
             <p class="ui-value-display" id="exponent-value">4.0</p>
@@ -140,20 +137,20 @@
           </div>
         </div>
         <div class="ui-button-container no-mobile">
-          <button class="ui-button ui-button-flex" id="keyframe-copy-previous">copy previous</button>
-          <button class="ui-button ui-button-flex" id="keyframe-copy-next">copy next</button>
+          <button class="ui-button ui-button-flex" id="keyframe-copy-previous">copiar anterior</button>
+          <button class="ui-button ui-button-flex" id="keyframe-copy-next">copiar próximo</button>
         </div>
         <div class="ui-button-container no-mobile">
-          <button class="ui-button ui-button-flex" id="keyframe-reset-all">reset all</button>
-          <button class="ui-button ui-button-flex" id="keyframe-reset-current">reset current</button>
+          <button class="ui-button ui-button-flex" id="keyframe-reset-all">resetar todos</button>
+          <button class="ui-button ui-button-flex" id="keyframe-reset-current">resetar atual</button>
         </div>
-        <button class="ui-button" id="keyframe-randomize">randomize keyframe</button>
+        <button class="ui-button" id="keyframe-randomize">randomizar keyframe</button>
       </div>
 
       <div class="ui-item">
-        <p class="ui-section ui-header" style="margin-bottom: 2px;">Color</p>
+        <p class="ui-section ui-header" style="margin-bottom: 2px;">Cor</p>
         <div>
-          <p class="ui-number-title">text</p>
+          <p class="ui-number-title">texto</p>
           <div class="ui-number-input">
             <input value="255" type="text" placeholder="0" class="ui-input ui-input-color" id="text-r-input"
               autocomplete="off" maxlength="3" oninput="rgbInput(this)">
@@ -164,7 +161,7 @@
           </div>
         </div>
         <div>
-          <p class="ui-number-title">background</p>
+          <p class="ui-number-title">fundo</p>
           <div class="ui-number-input">
             <input value="" type="text" placeholder="0" class="ui-input ui-input-color" id="bg-r-input"
               autocomplete="off" maxlength="3" oninput="rgbInput(this)">
@@ -177,22 +174,15 @@
       </div>
 
       <div class="ui-item no-mobile">
-        <p class="ui-section ui-header" style="margin-bottom: 4px;">Preview</p>
-        <button class="ui-button" id="animation-play">play animation</button>
-        <button class="ui-button" id="visibility-toggle">toggle visibility</button>
+        <p class="ui-section ui-header" style="margin-bottom: 4px;">Pré-visualização</p>
+        <button class="ui-button" id="animation-play">começar animação</button>
+        <button class="ui-button" id="visibility-toggle">alternar visibilidade</button>
       </div>
 
       <div class="ui-item">
-        <p class="ui-section ui-header" style="margin-bottom: 4px;">File</p>
-        <button class="ui-button" id="png">download png</button>
-        <button class="ui-button no-mobile" id="mp4">download mp4</button>
-      </div>
-
-      <div class="ui-description">
-        <p>developed by <a href="https://joaogeneroso.com/" target="_blank">joão generoso</a></p>
-        <p>if you create something with this platform, let me know! be free to dm me on <a
-            href="https://www.instagram.com/juaogeneroso/" target="_blank">instagram</a> or send me an <a
-            href="mailto:oi@joaogeneroso.com">email</a>.</p>
+        <p class="ui-section ui-header" style="margin-bottom: 4px;">Arquivo</p>
+        <button class="ui-button" id="png">baixar png</button>
+        <button class="ui-button no-mobile" id="mp4">baixar mp4</button>
       </div>
     </section>
   </div>
@@ -200,7 +190,7 @@
   <script>
     if (window.innerWidth < 600) {
       let dynamicContent = document.getElementById("dynamicContent");
-      dynamicContent.innerHTML = '<h2 style="padding: 10px">Sorry, this page was not yet optimized for mobile devices.<br>For a better experience, please access with a computer.</h2>';
+      dynamicContent.innerHTML = '<h2 style="padding: 10px">Desculpa, essa página ainda não foi otimizada para aparelhos móveis.<br>Para uma melhor experiência, por favor acesse a ferramenta com um computador.</h2>';
     }
   </script>
 </body>
