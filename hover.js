@@ -55,8 +55,8 @@ function infoHover() {
       "LEFT CLICK:<br>moves a single point<br><br>RIGHT CLICK:<br>moves all points at once<br><br>MIDDLE BUTTON:<br>scales freely<br><br>MOUSE SCROLL:<br>zooms in and out<br><br>SHIFT / CONTROL:<br>retricts transform to an axis"
     ] :
     [
-      "ATENÇÃO!<br>qualquer mudando ao texto<br>resetará todos os keyframes",
-      "ATENÇÃO!<br>qualquer mudando ao lattice<br>resetará todos os keyframes",
+      "ATENÇÃO!<br>qualquer mudança ao texto<br>resetará todos os keyframes",
+      "ATENÇÃO!<br>qualquer mudança ao lattice<br>resetará todos os keyframes",
       "BOTÃO ESQUERDO:<br>move um único ponto<br><br>BOTÃO DIREITO:<br>move todos os pontos<br><br>BOTÃO DO MEIO:<br>escala livremente<br><br>SCROLL DO MOUSE:<br>escala o tamanho do texto<br><br>SHIFT / CONTROL:<br>retringe transformação a um eixo"
     ];
 
